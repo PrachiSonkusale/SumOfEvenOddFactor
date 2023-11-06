@@ -1,0 +1,38 @@
+import java.util.Scanner; 
+class SumOfEvenOddFactors
+{
+    public static void main(String[] args) 
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter The No");
+        int num=s.nextInt();
+		int evensum=0 , oddsum=0;
+		int den=1;
+   
+        while (den<=num)
+         {
+              if (num % den==0)
+              {
+                  
+		    if (den %2==0)
+
+		      {
+			   
+			    evensum=evensum+den;
+				
+		      }
+		    else 
+		     {
+              
+			   oddsum=oddsum+den;
+			   
+		     }
+		}
+
+		den++; 
+		
+	}
+		System.out.println("Sum Of evenFact Is "+evensum);
+		System.out.println("Sum Of oddFact Is "+oddsum);
+    }
+}
